@@ -1,0 +1,1560 @@
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 22:29:06 on Apr 11,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/message
+add wave -position end  sim:/RSA_tb/p
+add wave -position end  sim:/RSA_tb/q
+add wave -position end  sim:/RSA_tb/encrypted_message
+run -all
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Encrypted Message    : 1
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv(35)
+#    Time: 60 ns  Iteration: 0  Instance: /RSA_tb
+# 1
+# Break in Module RSA_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv line 35
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Encrypted Message    : 1
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c_temp
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Encrypted Message    : 1
+restart -f
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Encrypted Message    : 1
+quit -sim
+# End time: 12:54:03 on Apr 12,2025, Elapsed time: 14:24:57
+# Errors: 0, Warnings: 2
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 12:54:13 on Apr 12,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 27
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c_temp
+run -all
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 1
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (128) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 27
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 1
+quit -sim
+# End time: 12:55:34 on Apr 12,2025, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 4
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 12:55:49 on Apr 12,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (128) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 27
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c_temp
+run -all
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 1
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 13845884
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/d
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m_temp
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 13845884
+add wave -position end  sim:/RSA_tb/uut/p
+add wave -position end  sim:/RSA_tb/uut/q
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 13845884
+add wave -position end  sim:/RSA_tb/e
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module decrypt at C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv line 14
+quit -sim
+# End time: 13:09:22 on Apr 12,2025, Elapsed time: 0:13:33
+# Errors: 0, Warnings: 1
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 13:09:50 on Apr 12,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/message
+add wave -position end  sim:/RSA_tb/p
+add wave -position end  sim:/RSA_tb/q
+add wave -position end  sim:/RSA_tb/e
+add wave -position end  sim:/RSA_tb/encrypted_message
+run -all
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 65537
+# Modulus (n)         : 62425477
+# Encrypted Message    : 10079329
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module decrypt at C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv line 13
+quit -sim
+# End time: 13:14:14 on Apr 12,2025, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 1
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 13:14:24 on Apr 12,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/message
+add wave -position end  sim:/RSA_tb/p
+add wave -position end  sim:/RSA_tb/q
+add wave -position end  sim:/RSA_tb/e
+add wave -position end  sim:/RSA_tb/encrypted_message
+run -all
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 7919
+# q                    : 7883
+# Public Exponent (e)  : 31
+# Modulus (n)         : 62425477
+# Encrypted Message    : 10778342
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 16
+# Modulus (n)         : 35
+# Encrypted Message    : 11
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 24
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 375902487384808154890324269161475689
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 24
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv failed with 1 errors.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 24
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+quit -sim
+# End time: 13:32:44 on Apr 12,2025, Elapsed time: 0:18:20
+# Errors: 0, Warnings: 1
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv failed with 3 errors.
+# 5 compiles, 1 failed with 3 errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 13:34:59 on Apr 12,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/e
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/phi
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/d
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/t
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/new_t
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/r
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/new_r
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/q
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/temp_t
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/temp_r
+run -all
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 16
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/d_calc_inst/temp_t'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/d_calc_inst/temp_r'. 
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 16
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 16
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/uut/message
+add wave -position end  sim:/RSA_tb/uut/p
+add wave -position end  sim:/RSA_tb/uut/q
+add wave -position end  sim:/RSA_tb/uut/e
+add wave -position end  sim:/RSA_tb/uut/encrypted_message
+add wave -position end  sim:/RSA_tb/uut/n
+add wave -position end  sim:/RSA_tb/uut/phi
+add wave -position end  sim:/RSA_tb/uut/message_temp
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 16
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c_temp
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/d
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/result
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/base
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/exponent
+run -all
+# Load canceled
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/decrypt_inst/result'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/decrypt_inst/base'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/decrypt_inst/exponent'. 
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/d
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m_temp
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)         : 35
+# Encrypted Message    : 
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m_temp
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/decrypt_inst/m_temp'. 
+add wave -position end  sim:/RSA_tb/clk
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv(48)
+#    Time: 60 ns  Iteration: 0  Instance: /RSA_tb
+# 1
+# Break in Module RSA_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv line 48
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv failed with 1 errors.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv failed with 1 errors.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 27
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(27): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 34
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(34): [TFMPC] - Missing connection for port 'clk'.
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c_r
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/next_c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e_r
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/next_e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/state_r
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/next_state
+add wave -position insertpoint  \
+sim:/RSA_tb/uut/decrypt_inst/c \
+sim:/RSA_tb/uut/decrypt_inst/d \
+sim:/RSA_tb/uut/decrypt_inst/n \
+sim:/RSA_tb/uut/decrypt_inst/m \
+sim:/RSA_tb/uut/decrypt_inst/m_r \
+sim:/RSA_tb/uut/decrypt_inst/next_m \
+sim:/RSA_tb/uut/decrypt_inst/d_r \
+sim:/RSA_tb/uut/decrypt_inst/next_d \
+sim:/RSA_tb/uut/decrypt_inst/state_r \
+sim:/RSA_tb/uut/decrypt_inst/next_state
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 27
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(27): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(27): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 34
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(34): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(34): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+add wave -position 1  sim:/RSA_tb/uut/rst
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'encrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(28): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decrypt_inst'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 35
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(35): [TFMPC] - Missing connection for port 'rst'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 1
+# A time value could not be extracted from the current line
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful with warnings.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful with warnings.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 5j¹æÁçsn¥ÞŸ’BÉ
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful with warnings.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : 5j¹æÁçsn¥ÞŸ’BÉ
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Hello, I'm Yoni
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 0
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/c_r'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/next_c'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/e_r'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/next_e'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/state_r'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/RSA_tb/uut/encrypt_inst/next_state'. 
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 35
+# Encrypted Message    : 1
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (4) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (33) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : rome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 3
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (4) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 3
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 5
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 3
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : x
+restart
+# Compile of RSA_top.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (8) for port 'n'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA/RSA_top.sv Line: 37
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : x
+# End time: 15:47:40 on Apr 12,2025, Elapsed time: 2:12:41
+# Errors: 0, Warnings: 5
