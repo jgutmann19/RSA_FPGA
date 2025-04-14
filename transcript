@@ -1,0 +1,125 @@
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 21:32:01 on Apr 13,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# ** Error: (vsim-3033) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(22): Instantiation of 'd_calc' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv
+#         Searched libraries:
+#             C:/Users/Yoni/Desktop/Coding/RSA/work
+# Loading work.encrypt
+# Loading work.decrypt
+# Error loading design
+# End time: 21:32:01 on Apr 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of RSA_top.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.RSA_tb
+# vsim -gui work.RSA_tb 
+# Start time: 21:32:25 on Apr 13,2025
+# Loading sv_std.std
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(22): [PCDPC] - Port size (128) does not match connection size (9) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/d_calc.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/d_calc_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/d_calc.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/e
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/phi
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/d
+add wave -position end  sim:/RSA_tb/uut/d_calc_inst/temp_d
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/clk
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/rst
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/encrypt_inst/temp_c
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/clk
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/rst
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/c
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/d
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/n
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m
+add wave -position end  sim:/RSA_tb/uut/decrypt_inst/temp_m
+run -all
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : x
+# Compile of RSA_top.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : 1
+# Compile of RSA_top.sv was successful.
+# Compile of decrypt.sv was successful.
+# Compile of encrypt.sv was successful.
+# Compile of RSA_tb.sv was successful.
+# Compile of d_calc.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# Loading work.RSA_tb
+# Loading work.RSA_top
+# Loading work.d_calc
+# Loading work.encrypt
+# Loading work.decrypt
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Input Message        : Jerome
+# p                    : 3
+# q                    : 7
+# Public Exponent (e)  : 5
+# Modulus (n)          : 5
+# Encrypted Message    : 1

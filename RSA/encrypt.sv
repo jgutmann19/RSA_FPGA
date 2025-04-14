@@ -30,11 +30,11 @@ module encrypt (
     //     end
         
     // end
-    logic [32:0] temp_c; // Register to hold the encrypted message
+    logic [255:0] temp_c; // Register to hold the encrypted message
     // Calculate c = m^e mod n
     always_comb begin
         temp_c = (message ** e); 
-        c = temp_c % n;; // Assign the result to c
+        c = temp_c % n; // Assign the result to c
         // Compute c = m^e mod n
         // next_state = state_r;
         // next_c = c_r;

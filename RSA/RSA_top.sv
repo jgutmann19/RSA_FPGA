@@ -12,18 +12,18 @@ module RSA_top (
     logic [7:0] n; // Modulus
     assign n = p * q; // Calculate n
 
-    // logic [127:0] phi; 
-    // assign phi = (p - 1) * (q - 1); // Calculate phi(n)
+    logic [127:0] phi; 
+    assign phi = (p - 1) * (q - 1); // Calculate phi(n)
 
     logic [64:0] message_temp; // Temporary variable for message
 
-    // logic [127:0] d; // Private exponent
+    logic [127:0] d; // Private exponent
 
-    // d_calc d_calc_inst (
-    //     .e(e),
-    //     .phi(phi),
-    //     .d(d) // d is calculated here
-    // );
+    d_calc d_calc_inst (
+        .e(e),
+        .phi(phi),
+        .d(d) // d is calculated here
+    );
 
     encrypt encrypt_inst (
         .clk(clk),
@@ -38,7 +38,7 @@ module RSA_top (
         .clk(clk),
         .rst(rst),
         .c(message_temp),
-        .d(128'd5), // Assuming d is the same as e for simplicity
+        .d(d), // Assuming d is the same as e for simplicity
         .n(n),
         .m(encrypted_message) // Decrypted message
     );
