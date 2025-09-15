@@ -1,125 +1,193 @@
-vsim -gui work.RSA_tb
-# vsim -gui work.RSA_tb 
-# Start time: 21:32:01 on Apr 13,2025
-# Loading sv_std.std
-# Loading work.RSA_tb
-# Loading work.RSA_top
-# ** Error: (vsim-3033) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(22): Instantiation of 'd_calc' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv
-#         Searched libraries:
-#             C:/Users/Yoni/Desktop/Coding/RSA/work
-# Loading work.encrypt
-# Loading work.decrypt
+# Compile of modmult.sv was successful.
+# Compile of modmult_tb.sv was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.modmult_tb -voptargs=+acc
+# vsim work.modmult_tb -voptargs="+acc" 
+# Start time: 15:02:39 on Sep 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/modmult_tb.sv(20): (vopt-13259) Missing instance name in instantiation of module/program/interface 'modmult'.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
 # Error loading design
-# End time: 21:32:01 on Apr 13,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# Compile of RSA_top.sv was successful.
-# Compile of decrypt.sv was successful.
-# Compile of encrypt.sv was successful.
-# Compile of RSA_tb.sv was successful.
-# Compile of d_calc.sv was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.RSA_tb
-# vsim -gui work.RSA_tb 
-# Start time: 21:32:25 on Apr 13,2025
+# End time: 15:02:40 on Sep 15,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of modmult_tb.sv was successful with warnings.
+vsim -voptargs=+acc work.modmult_tb
+# vsim -voptargs="+acc" work.modmult_tb 
+# Start time: 15:03:31 on Sep 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.RSA_tb
-# Loading work.RSA_top
-# Loading work.d_calc
-# Loading work.encrypt
-# Loading work.decrypt
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(22): [PCDPC] - Port size (128) does not match connection size (9) for port 'e'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/d_calc.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/d_calc_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/d_calc.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-add wave -position end  sim:/RSA_tb/uut/d_calc_inst/e
-add wave -position end  sim:/RSA_tb/uut/d_calc_inst/phi
-add wave -position end  sim:/RSA_tb/uut/d_calc_inst/d
-add wave -position end  sim:/RSA_tb/uut/d_calc_inst/temp_d
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/clk
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/rst
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/n
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/e
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/message
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/c
-add wave -position end  sim:/RSA_tb/uut/encrypt_inst/temp_c
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/clk
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/rst
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/c
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/d
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/n
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/m
-add wave -position end  sim:/RSA_tb/uut/decrypt_inst/temp_m
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+add wave -position end  sim:/modmult_tb/WIDTH
+add wave -position end  sim:/modmult_tb/clk
+add wave -position end  sim:/modmult_tb/rst
+add wave -position end  sim:/modmult_tb/go
+add wave -position end  sim:/modmult_tb/a
+add wave -position end  sim:/modmult_tb/b
+add wave -position end  sim:/modmult_tb/n
+add wave -position end  sim:/modmult_tb/result
+add wave -position end  sim:/modmult_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Yoni  Hostname: DESKTOP-IJD33DM  ProcessID: 14356
+#           Attempting to use alternate WLF file "./wlftw6j0gc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw6j0gc
 run -all
-# Input Message        : Jerome
-# p                    : 3
-# q                    : 7
-# Public Exponent (e)  : 5
-# Modulus (n)          : 5
-# Encrypted Message    : x
-# Compile of RSA_top.sv was successful.
-# Compile of decrypt.sv was successful.
-# Compile of encrypt.sv was successful.
-# Compile of RSA_tb.sv was successful.
-# Compile of d_calc.sv was successful.
-# 5 compiles, 0 failed with no errors.
+# Compile of modmult_tb.sv was successful with warnings.
 restart
-# Loading work.RSA_tb
-# Loading work.RSA_top
-# Loading work.d_calc
-# Loading work.encrypt
-# Loading work.decrypt
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Input Message        : Jerome
-# p                    : 3
-# q                    : 7
-# Public Exponent (e)  : 5
-# Modulus (n)          : 5
-# Encrypted Message    : 1
-# Compile of RSA_top.sv was successful.
-# Compile of decrypt.sv was successful.
-# Compile of encrypt.sv was successful.
-# Compile of RSA_tb.sv was successful.
-# Compile of d_calc.sv was successful.
-# 5 compiles, 0 failed with no errors.
+# Test Case 1:
+# a      : 14868
+# b      : 37834
+# n      : 3
+# Result : 0
+# Compile of modmult_tb.sv was successful.
 restart
-# Loading work.RSA_tb
-# Loading work.RSA_top
-# Loading work.d_calc
-# Loading work.encrypt
-# Loading work.decrypt
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(28): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/encrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/encrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (33) does not match connection size (65) for port 'c'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (5) does not match connection size (128) for port 'd'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
-# ** Warning: (vsim-3015) C:/Users/Yoni/Desktop/Coding/RSA/RSA/RSA_top.sv(37): [PCDPC] - Port size (128) does not match connection size (65) for port 'm'. The port definition is at: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /RSA_tb/uut/decrypt_inst File: C:/Users/Yoni/Desktop/Coding/RSA/RSA/decrypt.sv
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Input Message        : Jerome
-# p                    : 3
-# q                    : 7
-# Public Exponent (e)  : 5
-# Modulus (n)          : 5
-# Encrypted Message    : 1
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 0
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+add wave -position end  sim:/modmult_tb/DUT/WIDTH
+add wave -position end  sim:/modmult_tb/DUT/clk
+add wave -position end  sim:/modmult_tb/DUT/rst
+add wave -position end  sim:/modmult_tb/DUT/go
+add wave -position end  sim:/modmult_tb/DUT/a
+add wave -position end  sim:/modmult_tb/DUT/b
+add wave -position end  sim:/modmult_tb/DUT/n
+add wave -position end  sim:/modmult_tb/DUT/result
+add wave -position end  sim:/modmult_tb/DUT/done
+add wave -position end  sim:/modmult_tb/DUT/state_r
+add wave -position end  sim:/modmult_tb/DUT/next_state
+add wave -position end  sim:/modmult_tb/DUT/done_r
+add wave -position end  sim:/modmult_tb/DUT/next_done
+add wave -position end  sim:/modmult_tb/DUT/a_r
+add wave -position end  sim:/modmult_tb/DUT/next_a
+add wave -position end  sim:/modmult_tb/DUT/b_r
+add wave -position end  sim:/modmult_tb/DUT/next_b
+add wave -position end  sim:/modmult_tb/DUT/n_r
+add wave -position end  sim:/modmult_tb/DUT/next_n
+add wave -position end  sim:/modmult_tb/DUT/result_r
+add wave -position end  sim:/modmult_tb/DUT/next_result
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 0
+# Compile of modmult_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 7
+quit -sim
+# End time: 15:57:11 on Sep 15,2025, Elapsed time: 0:53:40
+# Errors: 0, Warnings: 2
+# Compile of modmult_tb.sv was successful.
+# Compile of modmult.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.modmult_tb
+# vsim -voptargs="+acc" work.modmult_tb 
+# Start time: 15:57:48 on Sep 15,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 7
+# Compile of modmult_tb.sv was successful.
+# Compile of modmult.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 7
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv(49)
+#    Time: 85 ns  Iteration: 2  Instance: /modmult_tb
+# 1
+# Break in Module modmult_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv line 49
+add wave -position end  sim:/modmult_tb/WIDTH
+add wave -position end  sim:/modmult_tb/clk
+add wave -position end  sim:/modmult_tb/rst
+add wave -position end  sim:/modmult_tb/go
+add wave -position end  sim:/modmult_tb/a
+add wave -position end  sim:/modmult_tb/b
+add wave -position end  sim:/modmult_tb/n
+add wave -position end  sim:/modmult_tb/result
+add wave -position end  sim:/modmult_tb/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Yoni  Hostname: DESKTOP-IJD33DM  ProcessID: 14356
+#           Attempting to use alternate WLF file "./wlft8h8w29".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8h8w29
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.modmult_tb(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# a      : 13
+# b      : 11
+# n      : 17
+# Result : 7
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv(49)
+#    Time: 85 ns  Iteration: 2  Instance: /modmult_tb
+# 1
+# Break in Module modmult_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv line 49
