@@ -23,6 +23,12 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
 Z2 !s12c _opt2
 R1
 R2
@@ -54,10 +60,10 @@ R1
 cModel Technology
 Z4 dC:/intelFPGA/19.1
 T_opt
-!s110 1758214512
-Vg7_9k_<f1dUUZ1f8izk5[2
+!s110 1758216787
+V@AHV_G:d4YVYY7904<gg23
 Z5 04 9 4 work modexp_tb fast 0
-=15-28d0430190ca-68cc396f-21c-86cc
+=18-28d0430190ca-68cc4253-1a8-86cc
 R1
 Z6 !s12b OEM100
 Z7 !s124 OEM10U3 
@@ -169,23 +175,23 @@ R9
 vmodexp
 2C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv
 R11
-!s110 1758214508
+!s110 1758214932
 !i10b 1
-!s100 XT[lMSTi@K:BS4MSn:zDW3
-Iiklk]lLZ0dLX_n7m3_8m52
+!s100 =YlDigOQlIOPP8eicYafZ3
+IEY:Ng9OaGiFkT?:Em2aI@2
 S1
 R12
-w1758214506
+w1758214928
 8C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv
 FC:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv
-!i122 68
-L0 2 154
+!i122 69
+L0 2 170
 R13
 R14
 r1
 !s85 0
 31
-!s108 1758214508.000000
+!s108 1758214932.000000
 !s107 C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv|
 !i113 0
@@ -194,23 +200,23 @@ R9
 vmodexp_tb
 2C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv
 R11
-Z20 !s110 1758212496
+!s110 1758216785
 !i10b 1
-!s100 :U;WF=oHd7f9VLVWTl4i13
-IX;]OLT]GSEgijSnRPRb?I1
+!s100 Bn^T?lMQ[@bVOBo2i>`eP0
+I;jKG^bf[6lAn?A:_d[DOK3
 S1
 R12
-w1758138315
+w1758216781
 8C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv
 FC:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv
-!i122 67
-Z21 L0 3 50
+!i122 71
+Z20 L0 3 50
 R13
 R14
 r1
 !s85 0
 31
-Z22 !s108 1758212496.000000
+!s108 1758216785.000000
 !s107 C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv|
 !i113 0
@@ -219,7 +225,7 @@ R9
 vmodmult
 2C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modmult.sv
 R11
-R20
+Z21 !s110 1758212496
 !i10b 1
 !s100 ZDQX8Bfjb@E<BdTZ=acD@1
 I9LYOj^Jh1:^IP[CYKLMoL0
@@ -235,7 +241,7 @@ R14
 r1
 !s85 0
 31
-R22
+Z22 !s108 1758212496.000000
 !s107 C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modmult.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modmult.sv|
 !i113 0
@@ -244,7 +250,7 @@ R9
 vmodmult_tb
 2C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv
 R11
-R20
+R21
 !i10b 1
 !s100 2`;9L=>YKl48Zn72KFY]@3
 IZ>FT`@]03?nOWlkBNa08A3
@@ -254,7 +260,7 @@ w1757966293
 8C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv
 FC:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modmult_tb.sv
 !i122 65
-R21
+R20
 R13
 R14
 r1

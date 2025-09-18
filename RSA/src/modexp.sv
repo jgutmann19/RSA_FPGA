@@ -11,10 +11,12 @@ module modexp #(
     output logic [WIDTH-1:0] result,
     output logic done
 );
-    typedef enum logic [1:0] {
+    typedef enum logic [2:0] {
         START,
-        COMPUTE,
-        RESTART,
+        CHECK,
+        EXP_RES,
+        EXP_BASE,
+        DONE,
         XXX = 'x
     } state_t;
 
@@ -108,45 +110,59 @@ module modexp #(
                     next_n = n;
                     next_result = 1; // Initialize result to 1
                     next_base = m % n;
-                    next_state = COMPUTE;
+                    next_state = CHECK;
                 end
             end
 
-            COMPUTE: begin
+            CHECK: begin
                 if (e_r == 0) begin
                     next_result = result_r;
                     next_done = 1; // Done when exponent is 0
-                    next_state = RESTART;
+                    next_state = DONE;
                 end else begin
                     if (e_r[0] == 1) begin                        
-                        next_modmult_a = result_r;
-                        next_modmult_b = base_r;
-                        next_modmult_n = n_r;
-                        next_modmult_go = 1;
-
-                        if (modmult_done == 1'b1) begin
-                            next_modmult_go = 0;
-                            next_result = modmult_result;
-                        end
+                        next_state = EXP_RES;
                     end 
-                    // m = (m * m) % n
-                    next_modmult_a = base_r;
-                    next_modmult_b = base_r;
-                    next_modmult_n = n_r;
-                    next_modmult_go = 1;
-
-                    if (modmult_done == 1'b1) begin
-                        next_modmult_go = 0;
-                        next_base = modmult_result;
-                        next_e = e_r >> 1; // e = e / 2
-                        next_state = COMPUTE; // Stay in COMPUTE state
+                    else begin
+                        next_state = EXP_BASE;
                     end
                 end
             end
-            RESTART: begin
-                next_state = START;
+
+            EXP_RES: begin
+                // result = (result * base) % n
+                next_modmult_a = result_r;
+                next_modmult_b = base_r;
+                next_modmult_n = n_r;
+                next_modmult_go = 1;
+
+                if (modmult_done == 1'b1) begin
+                    next_modmult_go = 0;
+                    next_result = modmult_result;
+                    next_state = EXP_BASE; // Move to EXP_BASE state
+                end
+            end
+
+            EXP_BASE: begin
+                // base = (base * base) % n
+                next_modmult_a = base_r;
+                next_modmult_b = base_r;
+                next_modmult_n = n_r;
+                next_modmult_go = 1;
+
+                if (modmult_done == 1'b1) begin
+                    next_modmult_go = 0;
+                    next_base = modmult_result;
+                    next_e = e_r >> 1; // e = e / 2
+                    next_state = CHECK; // Go back to CHECK state
+                end
+            end
+
+            DONE: begin
+                next_state = START; // Go to START on new go signal
                 next_done = 0; // Clear done signal for next operation     
             end
+            
 
         endcase
     end

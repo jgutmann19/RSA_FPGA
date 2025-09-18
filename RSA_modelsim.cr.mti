@@ -12,11 +12,11 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	modmult_tb
 
-} {} {}} C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv
+} {} {}} C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module modexp_tb
+-- Compiling module modexp
 
 Top level modules:
-	modexp_tb
+	modexp
 
 } {} {}}

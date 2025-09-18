@@ -450,3 +450,63 @@ run -all
 # ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
 #    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
 # Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modexp.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 14
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 415 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modexp_tb.sv failed with 1 errors.
+# Compile of modexp_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 26729
+# e      : 3
+# n      : 55
+# Result : 54
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 375 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# A time value could not be extracted from the current line
+# Compile of modexp_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 21
+# e      : 4
+# n      : 133
+# Result : 35
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 475 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49

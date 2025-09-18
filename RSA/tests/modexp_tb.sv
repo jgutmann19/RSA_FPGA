@@ -30,9 +30,9 @@ module modexp_tb #(
         #20 rst = 0; // Deassert reset after 5 ns
 
         // Test case 1
-        m = 9;
-        e = 3;
-        n = 55;
+        m = 21;
+        e = 4;
+        n = 133;
 
         #10;
 
