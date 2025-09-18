@@ -1,25 +1,15 @@
+# Compile of modmult_tb.sv was successful.
+# Compile of modmult.sv was successful.
+# Compile of modexp.sv was successful.
+# Compile of modexp_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
 vsim work.modexp_tb -voptargs=+acc
 # vsim work.modexp_tb -voptargs="+acc" 
-# Start time: 14:37:01 on Sep 16,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading sv_std.std
-# Loading work.modexp_tb(fast)
-# Loading work.modexp(fast)
-# Loading work.modmult(fast)
-# ** Error (suppressible): (vsim-3839) Variable '/modexp_tb/DUT/modmult_done', driven via a port connection, is multiply driven. See C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv(44).
-#    Time: 0 ps  Iteration: 0  Instance: /modexp_tb/DUT File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv Line: 81
-# ** Error (suppressible): (vsim-3839) Variable '/modexp_tb/DUT/modmult_done', driven via a port connection, is multiply driven. See C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv(44).
-#    Time: 0 ps  Iteration: 0  Instance: /modexp_tb/DUT File: C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/src/modexp.sv Line: 68
-# Error loading design
-# End time: 14:37:02 on Sep 16,2025, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 1
-# Compile of modexp.sv was successful.
-vsim -voptargs=+acc work.modexp_tb
-# vsim -voptargs="+acc" work.modexp_tb 
-# Start time: 14:38:07 on Sep 16,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 15:04:05 on Sep 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.modexp_tb(fast)
@@ -59,9 +49,9 @@ add wave -position end  sim:/modexp_tb/DUT/n_ext_modmult_result
 add wave -position end  sim:/modexp_tb/DUT/modmult_done
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Yoni  Hostname: DESKTOP-IJD33DM  ProcessID: 14356
-#           Attempting to use alternate WLF file "./wlft309we8".
+#           Attempting to use alternate WLF file "./wlft3da1f6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft309we8
+#           Using alternate file: ./wlft3da1f6
 run -all
 # Test Case 1:
 # m      : 9
@@ -72,6 +62,205 @@ run -all
 #    Time: 195 ns  Iteration: 2  Instance: /modexp_tb
 # 1
 # Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 48
+# Compile of modexp.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/modexp_tb/DUT/n_ext_modmult_result'. 
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(48)
+#    Time: 195 ns  Iteration: 2  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 48
+# Compile of modexp.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(48)
+#    Time: 195 ns  Iteration: 2  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 48
+# Compile of modexp_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Causality operation skipped due to absence of debug database file
+add wave -position end  sim:/modexp_tb/DUT/WIDTH
+add wave -position end  sim:/modexp_tb/DUT/clk
+add wave -position end  sim:/modexp_tb/DUT/rst
+add wave -position end  sim:/modexp_tb/DUT/go
+add wave -position end  sim:/modexp_tb/DUT/m
+add wave -position end  sim:/modexp_tb/DUT/e
+add wave -position end  sim:/modexp_tb/DUT/n
+add wave -position end  sim:/modexp_tb/DUT/result
+add wave -position end  sim:/modexp_tb/DUT/done
+add wave -position end  sim:/modexp_tb/DUT/state_r
+add wave -position end  sim:/modexp_tb/DUT/next_state
+add wave -position end  sim:/modexp_tb/DUT/done_r
+add wave -position end  sim:/modexp_tb/DUT/next_done
+add wave -position end  sim:/modexp_tb/DUT/m_r
+add wave -position end  sim:/modexp_tb/DUT/next_m
+add wave -position end  sim:/modexp_tb/DUT/e_r
+add wave -position end  sim:/modexp_tb/DUT/next_e
+add wave -position end  sim:/modexp_tb/DUT/n_r
+add wave -position end  sim:/modexp_tb/DUT/next_n
+add wave -position end  sim:/modexp_tb/DUT/result_r
+add wave -position end  sim:/modexp_tb/DUT/next_result
+add wave -position end  sim:/modexp_tb/DUT/modmult_go
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_go
+add wave -position end  sim:/modexp_tb/DUT/modmult_a
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_a
+add wave -position end  sim:/modexp_tb/DUT/modmult_b
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_b
+add wave -position end  sim:/modexp_tb/DUT/modmult_n
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_n
+add wave -position end  sim:/modexp_tb/DUT/modmult_result
+add wave -position end  sim:/modexp_tb/DUT/modmult_done
+add wave -position end  sim:/modexp_tb/DUT/base_r
+add wave -position end  sim:/modexp_tb/DUT/next_base
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modmult.sv was successful.
+# Compile of modexp.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modmult.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modmult.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modmult(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# 1
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modexp_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 26
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
 add wave -position end  sim:/modexp_tb/DUT/DUT/WIDTH
 add wave -position end  sim:/modexp_tb/DUT/DUT/clk
 add wave -position end  sim:/modexp_tb/DUT/DUT/rst
@@ -95,7 +284,7 @@ add wave -position end  sim:/modexp_tb/DUT/DUT/result_r
 add wave -position end  sim:/modexp_tb/DUT/DUT/next_result
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.modexp_tb(fast)
 # Loading work.modexp(fast)
@@ -106,12 +295,9 @@ run -all
 # e      : 3
 # n      : 55
 # Result : 26
-# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(48)
-#    Time: 195 ns  Iteration: 2  Instance: /modexp_tb
-# 1
-# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 48
-# Compile of modexp.sv failed with 4 errors.
-# Compile of modexp.sv failed with 4 errors.
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 205 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
 # Compile of modexp.sv was successful.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -128,8 +314,139 @@ run -all
 # m      : 9
 # e      : 3
 # n      : 55
-# Result : 26
-# ** Note: $finish    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(48)
-#    Time: 195 ns  Iteration: 2  Instance: /modexp_tb
-# 1
-# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 48
+# Result : 16
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+add wave -position end  sim:/modexp_tb/DUT/WIDTH
+add wave -position end  sim:/modexp_tb/DUT/clk
+add wave -position end  sim:/modexp_tb/DUT/rst
+add wave -position end  sim:/modexp_tb/DUT/go
+add wave -position end  sim:/modexp_tb/DUT/m
+add wave -position end  sim:/modexp_tb/DUT/e
+add wave -position end  sim:/modexp_tb/DUT/n
+add wave -position end  sim:/modexp_tb/DUT/result
+add wave -position end  sim:/modexp_tb/DUT/done
+add wave -position end  sim:/modexp_tb/DUT/state_r
+add wave -position end  sim:/modexp_tb/DUT/next_state
+add wave -position end  sim:/modexp_tb/DUT/done_r
+add wave -position end  sim:/modexp_tb/DUT/next_done
+add wave -position end  sim:/modexp_tb/DUT/m_r
+add wave -position end  sim:/modexp_tb/DUT/next_m
+add wave -position end  sim:/modexp_tb/DUT/e_r
+add wave -position end  sim:/modexp_tb/DUT/next_e
+add wave -position end  sim:/modexp_tb/DUT/n_r
+add wave -position end  sim:/modexp_tb/DUT/next_n
+add wave -position end  sim:/modexp_tb/DUT/result_r
+add wave -position end  sim:/modexp_tb/DUT/next_result
+add wave -position end  sim:/modexp_tb/DUT/modmult_go
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_go
+add wave -position end  sim:/modexp_tb/DUT/modmult_a
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_a
+add wave -position end  sim:/modexp_tb/DUT/modmult_b
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_b
+add wave -position end  sim:/modexp_tb/DUT/modmult_n
+add wave -position end  sim:/modexp_tb/DUT/next_modmult_n
+add wave -position end  sim:/modexp_tb/DUT/modmult_result
+add wave -position end  sim:/modexp_tb/DUT/modmult_done
+add wave -position end  sim:/modexp_tb/DUT/base_r
+add wave -position end  sim:/modexp_tb/DUT/next_base
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 16
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+add wave -position end  sim:/modexp_tb/DUT/DUT/WIDTH
+add wave -position end  sim:/modexp_tb/DUT/DUT/clk
+add wave -position end  sim:/modexp_tb/DUT/DUT/rst
+add wave -position end  sim:/modexp_tb/DUT/DUT/go
+add wave -position end  sim:/modexp_tb/DUT/DUT/a
+add wave -position end  sim:/modexp_tb/DUT/DUT/b
+add wave -position end  sim:/modexp_tb/DUT/DUT/n
+add wave -position end  sim:/modexp_tb/DUT/DUT/result
+add wave -position end  sim:/modexp_tb/DUT/DUT/done
+add wave -position end  sim:/modexp_tb/DUT/DUT/state_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_state
+add wave -position end  sim:/modexp_tb/DUT/DUT/done_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_done
+add wave -position end  sim:/modexp_tb/DUT/DUT/a_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_a
+add wave -position end  sim:/modexp_tb/DUT/DUT/b_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_b
+add wave -position end  sim:/modexp_tb/DUT/DUT/n_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_n
+add wave -position end  sim:/modexp_tb/DUT/DUT/result_r
+add wave -position end  sim:/modexp_tb/DUT/DUT/next_result
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 16
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modexp.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 1
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49
+# Compile of modexp.sv failed with 2 errors.
+# Compile of modmult_tb.sv was successful.
+# Compile of modmult.sv was successful.
+# Compile of modexp.sv failed with 2 errors.
+# Compile of modexp_tb.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of modexp.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "modexp(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.modexp_tb(fast)
+# Loading work.modexp(fast)
+# Loading work.modmult(fast)
+run -all
+# Test Case 1:
+# m      : 9
+# e      : 3
+# n      : 55
+# Result : 16
+# ** Note: $stop    : C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv(49)
+#    Time: 225 ns  Iteration: 0  Instance: /modexp_tb
+# Break in Module modexp_tb at C:/Users/Yoni/Desktop/MAIN/Projects/RSA_FPGA/RSA/tests/modexp_tb.sv line 49

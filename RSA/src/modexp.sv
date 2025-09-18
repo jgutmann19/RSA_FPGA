@@ -31,8 +31,9 @@ module modexp #(
     logic [WIDTH-1:0] modmult_a, next_modmult_a;
     logic [WIDTH-1:0] modmult_b, next_modmult_b;
     logic [WIDTH-1:0] modmult_n, next_modmult_n;
-    logic [WIDTH-1:0] modmult_result, n_ext_modmult_result;
+    logic [WIDTH-1:0] modmult_result;
     logic modmult_done;
+    logic [WIDTH-1:0] base_r, next_base;
 
     assign result = result_r;
     assign done = done_r;
@@ -65,6 +66,7 @@ module modexp #(
             modmult_b <= '0;
             modmult_n <= '0;
             modmult_go <= 0;
+            base_r <= '0;
         end else begin
             state_r <= next_state;
             m_r <= next_m;
@@ -77,6 +79,7 @@ module modexp #(
             modmult_b <= next_modmult_b;
             modmult_n <= next_modmult_n;
             modmult_go <= next_modmult_go;
+            base_r <= next_base;
         end
     end
 
@@ -94,6 +97,7 @@ module modexp #(
         next_modmult_a = '0;
         next_modmult_b = '0;
         next_modmult_n = '0;
+        next_base = base_r;
 
         case (state_r)
             START: begin
@@ -103,8 +107,7 @@ module modexp #(
                     next_e = e;
                     next_n = n;
                     next_result = 1; // Initialize result to 1
-                    next_done = 0;
-                    next_modmult_b = m % n;
+                    next_base = m % n;
                     next_state = COMPUTE;
                 end
             end
@@ -117,32 +120,32 @@ module modexp #(
                 end else begin
                     if (e_r[0] == 1) begin                        
                         next_modmult_a = result_r;
-                        next_modmult_b = modmult_b;
+                        next_modmult_b = base_r;
                         next_modmult_n = n_r;
                         next_modmult_go = 1;
 
                         if (modmult_done == 1'b1) begin
+                            next_modmult_go = 0;
                             next_result = modmult_result;
-                            
-                            // m = (m * m) % n
-                            next_modmult_a = modmult_b;
-                            next_modmult_b = modmult_b;
-                            next_modmult_n = n_r;
-                            next_modmult_go = 1;
-
-                            if (modmult_done == 1'b1) begin
-                                next_modmult_b = modmult_result;
-                                next_e = e_r >> 1; // e = e / 2
-                                next_state = COMPUTE; // Stay in COMPUTE state
-                            end
                         end
                     end 
+                    // m = (m * m) % n
+                    next_modmult_a = base_r;
+                    next_modmult_b = base_r;
+                    next_modmult_n = n_r;
+                    next_modmult_go = 1;
+
+                    if (modmult_done == 1'b1) begin
+                        next_modmult_go = 0;
+                        next_base = modmult_result;
+                        next_e = e_r >> 1; // e = e / 2
+                        next_state = COMPUTE; // Stay in COMPUTE state
+                    end
                 end
             end
             RESTART: begin
                 next_state = START;
-                next_done = 0; // Clear done signal for next operation
-                
+                next_done = 0; // Clear done signal for next operation     
             end
 
         endcase

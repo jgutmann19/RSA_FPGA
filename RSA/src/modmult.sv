@@ -69,6 +69,7 @@ module modmult #(
             end
             COMPUTE: begin
                 if (b_r == 0) begin
+                    next_result = result_r; // Final reduction mod n
                     next_done = 1'b1; // Indicate done
                     next_state = RESTART;
                 end else begin

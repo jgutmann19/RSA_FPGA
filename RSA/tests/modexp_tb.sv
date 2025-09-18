@@ -40,12 +40,13 @@ module modexp_tb #(
         #10 go = 0; // Clear go signal after 10 ns
         
         @(posedge done);
+        #10; // Wait a bit after done is asserted
         $display("Test Case 1:");
         $display("m      : %0d", m);
         $display("e      : %0d", e);
         $display("n      : %0d", n);
         $display("Result : %0d", result);
-        $finish;
+        $stop;
 
     end
 endmodule
